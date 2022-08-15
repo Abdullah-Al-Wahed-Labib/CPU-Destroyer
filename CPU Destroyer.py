@@ -68,11 +68,11 @@ def mandelbrot(n):
             write(row[1])
 
 
-try:
-    while True:
+while True:
+    try:
         mandelbrot(
             999999999999999999999999999999999999999999999999999999999999999999)
-except KeyboardInterrupt:
-    while True:
-        mandelbrot(
-            999999999999999999999999999999999999999999999999999999999999999999)
+    except KeyboardInterrupt:
+        pass
+    except Exception:
+        pass
